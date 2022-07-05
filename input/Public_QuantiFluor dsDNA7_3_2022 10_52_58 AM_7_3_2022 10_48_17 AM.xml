@@ -1,0 +1,778 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+    <LastAuthor>DTX-Software</LastAuthor>
+    <Created>7/3/2022</Created>
+    <Version>1.0</Version>
+  </DocumentProperties>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <ProtectedStructure>False</ProtectedStructure>
+    <ProtectedWindows>False</ProtectedWindows>
+  </ExcelWorkbook>
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Normal">
+      <Alignment ss:Vertical="Bottom" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" />
+    </Style>
+    <Style ss:ID="BCC">
+      <Alignment ss:Vertical="Center" ss:Horizontal="Center" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" ss:Bold="1" />
+    </Style>
+    <Style ss:ID="BLB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Left" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" ss:Bold="1" />
+    </Style>
+    <Style ss:ID="NRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" />
+    </Style>
+    <Style ss:ID="NLB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Left" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" />
+    </Style>
+    <Style ss:ID="DTRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" />
+      <NumberFormat ss:Format="General Date" />
+    </Style>
+    <Style ss:ID="ErrorNRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" ss:Color="#FF9900" />
+    </Style>
+    <Style ss:ID="UnusedNRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" ss:Color="#C0C0C0" />
+    </Style>
+    <Style ss:ID="IncorrectNRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" ss:Color="#33CCCC" />
+    </Style>
+    <Style ss:ID="OverflowNRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" ss:Color="#FF0000" />
+    </Style>
+    <Style ss:ID="UnderflowNRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" ss:Color="#FF0000" />
+    </Style>
+    <Style ss:ID="OKNRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" />
+    </Style>
+    <Style ss:ID="RejectedNRB">
+      <Alignment ss:Vertical="Bottom" ss:Horizontal="Right" ss:WrapText="1" />
+      <Font ss:FontName="Arial Unicode MS" ss:Family="Swiss" ss:Color="#33CC33" />
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="General">
+    <Table x:FullColumns="1" x:FullRows="1">
+      <Column ss:AutoFitWidth="0" ss:Width="150" ss:Index="1" />
+      <Column ss:AutoFitWidth="0" ss:Width="150" ss:Index="2" />
+      <Row ss:Height="15" ss:Index="1">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">User</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Public</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="2">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Protocol name</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">QuantiFluor dsDNA</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="3">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Time of export</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">07/03/2022 10:52:58</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="4">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Time of last change</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">07/03/2022 10:48:17</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="5">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Time of last use (end time)</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">07/03/2022 10:51:20</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="6">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Software version</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">1.2.0.0</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="7">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Instrument name</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">iD3-4033</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="8">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Serial number</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">4033</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="9">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Notes</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="11">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Experiment (1 of 1)</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="12">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Experiment name</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Experiment 1</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="14">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Plate  (1 of 1)</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="15">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Plate name</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Plate 1</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="16">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Barcode</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="17">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Microplate name</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Standard opaque</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="18">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Rows</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">8</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="19">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Columns</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">12</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="20">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Well count</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">96 Wells</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="21">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Well shape</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Round</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="22">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Bottom shape</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Flat</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="23">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Orientation</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Landscape</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="24">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Is lidded</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">False</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="25">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Read Time</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">07/03/2022 10:48:33</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="27">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Data Reduction Settings</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="28">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Method</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Polarization</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="29">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">G-Factor</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">0.5</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="31">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Settings</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="32">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Measurement mode</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Fl</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="33">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Measurement type</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Endpoint</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="35">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Wavelength settings</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="36">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Method</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Mono / Mono</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="37">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Excitation/Emission</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">500 nm/540 nm</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="39">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Detection settings</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="40">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Integration time</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">400</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="41">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">PMT Sensitivity</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Auto</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="42">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Bottom read</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">False</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="43">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Read height</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">1</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="45">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Shake settings</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="46">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Shake</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">True</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="47">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Duration</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">30</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="48">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Mode</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Orbital</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="49">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Intensity</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Medium</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="51">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Read area settings</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="52">
+        <Cell ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Read order</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">Row</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="54">
+        <Cell ss:MergeAcross="1" ss:StyleID="BLB" ss:Index="1">
+          <Data ss:Type="String">Well data</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="55">
+        <Cell ss:StyleID="NLB" ss:Index="1">
+          <Data ss:Type="String">Wavelength(Ex/Em)</Data>
+        </Cell>
+        <Cell ss:StyleID="NLB" ss:Index="2">
+          <Data ss:Type="String">500 nm/540 nm</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="3">
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="4">
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="5">
+          <Data ss:Type="Number">3</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="6">
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="7">
+          <Data ss:Type="Number">5</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="8">
+          <Data ss:Type="Number">6</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="9">
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="10">
+          <Data ss:Type="Number">8</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="11">
+          <Data ss:Type="Number">9</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="12">
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="13">
+          <Data ss:Type="Number">11</Data>
+        </Cell>
+        <Cell ss:StyleID="NRB" ss:Index="14">
+          <Data ss:Type="Number">12</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="56">
+        <Cell ss:StyleID="NRB" ss:Index="2">
+          <Data ss:Type="String">A</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="3">
+          <Data ss:Type="Number">38769912</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="4">
+          <Data ss:Type="Number">19833552</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="5">
+          <Data ss:Type="Number">9535824</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="6">
+          <Data ss:Type="Number">4548644</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="7">
+          <Data ss:Type="Number">2193756</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="8">
+          <Data ss:Type="Number">112083</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="9">
+          <Data ss:Type="Number">39031468</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="10">
+          <Data ss:Type="Number">18929998</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="11">
+          <Data ss:Type="Number">9326235</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="12">
+          <Data ss:Type="Number">4586948</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="13">
+          <Data ss:Type="Number">2252569</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="14">
+          <Data ss:Type="Number">101576</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="57">
+        <Cell ss:StyleID="NRB" ss:Index="2">
+          <Data ss:Type="String">B</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="3">
+          <Data ss:Type="Number">8694398</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="4">
+          <Data ss:Type="Number">16640679</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="5">
+          <Data ss:Type="Number">33913228</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="6">
+          <Data ss:Type="Number">19189500</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="7">
+          <Data ss:Type="Number">33982752</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="8">
+          <Data ss:Type="Number">11792446</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="9">
+          <Data ss:Type="Number">10577837</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="10">
+          <Data ss:Type="Number">12941535</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="11">
+          <Data ss:Type="Number">37852312</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="12">
+          <Data ss:Type="Number">106433</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="13">
+          <Data ss:Type="Number">19116534</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="14">
+          <Data ss:Type="Number">19032092</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="58">
+        <Cell ss:StyleID="NRB" ss:Index="2">
+          <Data ss:Type="String">C</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="3">
+          <Data ss:Type="Number">23219</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="4">
+          <Data ss:Type="Number">34472</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="5">
+          <Data ss:Type="Number">55378</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="6">
+          <Data ss:Type="Number">54942</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="7">
+          <Data ss:Type="Number">49518</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="8">
+          <Data ss:Type="Number">49469</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="9">
+          <Data ss:Type="Number">53757</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="10">
+          <Data ss:Type="Number">46112</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="11">
+          <Data ss:Type="Number">66496</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="12">
+          <Data ss:Type="Number">43902</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="13">
+          <Data ss:Type="Number">43051</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="14">
+          <Data ss:Type="Number">49916</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="59">
+        <Cell ss:StyleID="NRB" ss:Index="2">
+          <Data ss:Type="String">D</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="3">
+          <Data ss:Type="Number">24217</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="4">
+          <Data ss:Type="Number">31047</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="5">
+          <Data ss:Type="Number">33355</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="6">
+          <Data ss:Type="Number">36975</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="7">
+          <Data ss:Type="Number">30355</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="8">
+          <Data ss:Type="Number">39816</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="9">
+          <Data ss:Type="Number">36670</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="10">
+          <Data ss:Type="Number">36555</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="11">
+          <Data ss:Type="Number">66290</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="12">
+          <Data ss:Type="Number">36746</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="13">
+          <Data ss:Type="Number">32306</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="14">
+          <Data ss:Type="Number">29558</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="60">
+        <Cell ss:StyleID="NRB" ss:Index="2">
+          <Data ss:Type="String">E</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="3">
+          <Data ss:Type="Number">27251</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="4">
+          <Data ss:Type="Number">21902</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="5">
+          <Data ss:Type="Number">25079</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="6">
+          <Data ss:Type="Number">27813</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="7">
+          <Data ss:Type="Number">38006</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="8">
+          <Data ss:Type="Number">35513</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="9">
+          <Data ss:Type="Number">41877</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="10">
+          <Data ss:Type="Number">25702</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="11">
+          <Data ss:Type="Number">21186</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="12">
+          <Data ss:Type="Number">28936</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="13">
+          <Data ss:Type="Number">33364</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="14">
+          <Data ss:Type="Number">28616</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="61">
+        <Cell ss:StyleID="NRB" ss:Index="2">
+          <Data ss:Type="String">F</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="3">
+          <Data ss:Type="Number">27412</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="4">
+          <Data ss:Type="Number">28304</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="5">
+          <Data ss:Type="Number">25086</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="6">
+          <Data ss:Type="Number">27548</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="7">
+          <Data ss:Type="Number">31180</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="8">
+          <Data ss:Type="Number">16914</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="9">
+          <Data ss:Type="Number">27594</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="10">
+          <Data ss:Type="Number">35836</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="11">
+          <Data ss:Type="Number">29773</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="12">
+          <Data ss:Type="Number">32461</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="13">
+          <Data ss:Type="Number">30313</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="14">
+          <Data ss:Type="Number">26998</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="62">
+        <Cell ss:StyleID="NRB" ss:Index="2">
+          <Data ss:Type="String">G</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="3">
+          <Data ss:Type="Number">29435</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="4">
+          <Data ss:Type="Number">31386</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="5">
+          <Data ss:Type="Number">28298</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="6">
+          <Data ss:Type="Number">37271</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="7">
+          <Data ss:Type="Number">32600</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="8">
+          <Data ss:Type="Number">25684</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="9">
+          <Data ss:Type="Number">46024</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="10">
+          <Data ss:Type="Number">40247</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="11">
+          <Data ss:Type="Number">28916</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="12">
+          <Data ss:Type="Number">38026</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="13">
+          <Data ss:Type="Number">27090</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="14">
+          <Data ss:Type="Number">28939</Data>
+        </Cell>
+      </Row>
+      <Row ss:Height="15" ss:Index="63">
+        <Cell ss:StyleID="NRB" ss:Index="2">
+          <Data ss:Type="String">H</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="3">
+          <Data ss:Type="Number">25882</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="4">
+          <Data ss:Type="Number">25637</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="5">
+          <Data ss:Type="Number">30572</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="6">
+          <Data ss:Type="Number">28847</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="7">
+          <Data ss:Type="Number">19612</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="8">
+          <Data ss:Type="Number">24157</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="9">
+          <Data ss:Type="Number">28500</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="10">
+          <Data ss:Type="Number">36805</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="11">
+          <Data ss:Type="Number">25400</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="12">
+          <Data ss:Type="Number">25585</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="13">
+          <Data ss:Type="Number">24253</Data>
+        </Cell>
+        <Cell ss:StyleID="OKNRB" ss:Index="14">
+          <Data ss:Type="Number">15993</Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>
